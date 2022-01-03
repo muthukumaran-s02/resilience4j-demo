@@ -45,4 +45,13 @@ dependencies {
 	compile("io.vavr:vavr-jackson:0.10.0")
 	testCompile('org.springframework.boot:spring-boot-starter-test')
 	testCompile('io.projectreactor:reactor-test')
+	
+	compile('org.junit.jupiter:junit-jupiter:5.8.2')
+	compile('org.junit.jupiter:junit-jupiter-api:5.8.2')
+	compile('org.junit.jupiter:junit-jupiter-engine:5.8.2')
+	testImplementation("org.junit.vintage:junit-vintage-engine:5.8.2")
+}
+
+test {
+    useJUnitPlatform()
 }
